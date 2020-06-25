@@ -1,0 +1,10 @@
+workflow "keyword-monitor" {
+on: "push"
+resolves = ["keyword-resolves"]
+}
+
+action "keyword-releaser" {
+  uses = "managedkaos/keyword-release-action@master"
+  secrets = ["GITHUB_TOKEN"]
+  args= 'FIXED"
+}
