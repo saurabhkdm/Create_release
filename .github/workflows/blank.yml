@@ -1,5 +1,5 @@
 workflow "keyword-monitor" {
-on: "push"
+on: push
 resolves = ["keyword-resolves"]
 }
 
