@@ -5,5 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Keyword Releaser
-        uses: managedkaos/keyword-releaser@v1.1
+        run: chmod +x ./entrypoint.sh
