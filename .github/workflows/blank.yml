@@ -5,4 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        run: chmod +x ./entrypoint.sh
+      
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      - run: |
+              chmod +x './entrypoint.sh'
+              ./entrypoint.sh
+
